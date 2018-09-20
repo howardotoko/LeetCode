@@ -26,6 +26,7 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[int]
         """
+        if len(s) == 0 or len(words) == 0: return []
         result, m, n, k = [], len(s), len(words), len(words[0])
         if m < n*k:
             return result
